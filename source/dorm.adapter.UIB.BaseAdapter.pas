@@ -801,7 +801,7 @@ begin
         s := field.FieldName + ' as blob';
         v := targetStream;
       end
-      else if CompareText(field.FieldType, 'decimal') = 0 then
+      else if (CompareText(field.FieldType, 'decimal') = 0) or (CompareText(field.FieldType, 'float') = 0) then
       begin
         v := AReader.Fields.ByNameAsDouble[field.FieldName];
         s := field.FieldName + ' as decimal';
@@ -872,7 +872,7 @@ begin
       AStatement.Params.AsString[ParameterIndex] := AValue.AsString;
     GetLogger.Debug('Par' + IntToStr(ParameterIndex) + ' = ' + AValue.AsString);
   end
-  else if CompareText(AFieldType, 'decimal') = 0 then
+  else if (CompareText(AFieldType, 'decimal') = 0) or (CompareText(AFieldType, 'float') = 0) then
   begin
     if IsNullable and CanBeConsideredAsNull(AValue) then
       AStatement.Params.IsNull[ParameterIndex] := true
