@@ -1,7 +1,8 @@
 unit dorm.Query;
 
 interface
-
+{$HINTS OFF}
+{$WARNINGS OFF}
 uses Generics.Collections,
   dorm.Mappings.Strategies,
   System.Rtti,

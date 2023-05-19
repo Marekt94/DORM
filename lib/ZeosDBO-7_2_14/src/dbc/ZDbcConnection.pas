@@ -54,7 +54,7 @@ unit ZDbcConnection;
 interface
 
 {$I ZDbc.inc}
-
+{$WARNINGS OFF}
 uses
 {$IFDEF WITH_LCONVENCODING}
   LConvEncoding,

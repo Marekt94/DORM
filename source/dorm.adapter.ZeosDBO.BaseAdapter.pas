@@ -1,7 +1,8 @@
 unit dorm.adapter.ZeosDBO.BaseAdapter;
 
 interface
-
+{$HINTS OFF}
+{$WARNINGS OFF}
 uses
   classes,
   SysUtils,

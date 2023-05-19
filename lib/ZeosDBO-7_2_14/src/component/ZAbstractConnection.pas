@@ -52,7 +52,7 @@
 unit ZAbstractConnection;
 
 interface
-
+{$HINTS OFF}
 {$I ZComponent.inc}
 
 uses

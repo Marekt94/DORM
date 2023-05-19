@@ -16,7 +16,8 @@
 unit dorm;
 
 interface
-
+{$HINTS OFF}
+{$WARNINGS OFF}
 uses
   ioutils,
   classes,
@@ -32,7 +33,8 @@ uses
   dorm.Commons,
   dorm.Query,
   dorm.ObjectStatus,
-  System.SysUtils;
+  System.SysUtils,
+  WinApi.Windows;
 
 type
 

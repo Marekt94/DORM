@@ -1,7 +1,7 @@
 unit dorm.adapter.ZeosDBO.Firebird;
 
 interface
-
+{$HINTS OFF}
 uses
   superobject,
   dorm.adapter.ZeosDBO.BaseAdapter,

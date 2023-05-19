@@ -711,7 +711,7 @@ begin
         else
           v := nil;
       end
-      else if CompareText(field.FieldType, 'decimal') = 0 then
+      else if (CompareText(field.FieldType, 'decimal') = 0) or (CompareText(field.FieldType, 'float') = 0) then
       begin
         v := AReader.Fields.ByNameAsDouble[field.FieldName];
         s := field.FieldName + ' as decimal';

@@ -2,6 +2,7 @@ unit dorm.adapter.ZeosDBO.Facade;
 
 interface
 
+{$WARNINGS OFF}
 uses
   ZDbcIntfs,
   ZAbstractConnection,
