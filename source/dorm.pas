@@ -2251,6 +2251,7 @@ begin
     // _type_name := Qualified(AMappingTable, attr.Value);
     _type_name := attr.Value;
     AChildType := FCTX.FindType(_type_name);
+
     if not assigned(AChildType) then
       raise Exception.Create('Unknown type ' + _type_name + ' (ListOf ' +
         attr.Value + ') ' + sLineBreak + 'Hint: Have you used the fully qualified name?');

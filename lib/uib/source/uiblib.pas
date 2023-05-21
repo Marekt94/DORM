@@ -18,6 +18,9 @@
 
 unit uiblib;
 
+{$WARNINGS OFF}
+{$HINTS OFF}
+
 {$I uib.inc}
 {$IFNDEF CPU64}
   {$ALIGN ON}

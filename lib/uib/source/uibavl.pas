@@ -16,6 +16,9 @@
 (********************************************************************************)
 
 unit uibavl;
+{$WARNINGS OFF}
+{$HINTS OFF}
+
 {$IFDEF FPC}
   {$MODE OBJFPC}{$H+}
 {$ENDIF}

@@ -1,5 +1,8 @@
 unit dorm.adapter.UIB.BaseAdapter;
 
+{$WARNINGS OFF}
+{$HINTS OFF}
+
 interface
 
 uses

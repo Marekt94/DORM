@@ -18,6 +18,9 @@
 
 unit uibmetadata;
 
+{$WARNINGS OFF}
+{$HINTS OFF}
+
 interface
 
 uses
